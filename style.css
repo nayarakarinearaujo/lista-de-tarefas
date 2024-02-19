@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    outline: none;
+}
+
+body {
+    background-image: url("./imagens/uma-paisagem-noturna-serena-com-montanhas-enluaradas_822108-9692.jpg");
+}
+
+.titulo {
+    color: antiquewhite;
+    font-family: "Fredoka", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+.container {
+    background-color: #d1d1d1;
+    /*Cor de fundo*/
+    width: 500px;
+    /*Largura*/
+    border-radius: 10px;
+    /*Arredondar as bordas*/
+    padding: 20px;
+    /*Espaçamento interno*/
+
+    /*margin-left: auto;
+    margin-right: auto; /*Ambos os lados no auto deixa a imegm no centro da página
+    margin-top: 100px; /*Distância da parte de cima da página*/
+
+    margin: 100px auto 0;
+    /*Atalho, primeiro valor distância da parte de cima da página, segundo valor laterais, terceiro valor distância do final da página*/
+}
+
+.input {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    /* Para o texto que fica de forma transparente na caixa não ficar colado no lado esquerdo */
+}
+
+.botao {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    background-color: #c093eb;
+    color: #111111;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    /*Para o botão ir todo para direita*/
+    cursor: pointer;
+    /*Colocar a "maozinha" quando estiver em cima do botão*/
+    font-weight: 500;
+
+}
+
+.botao:hover
+
+/*Ao clicar ou passar no botão mudar de cor*/
+    {
+    background-color: #9f41f7;
+
+}
+
+.botao:active
+
+/*Ao clicar no botão ele vai ficar mais transparente*/
+    {
+    opacity: 0.5;
+}
+
+.list {
+    width: 100%;
+    /*Para ocupar a linha inteira*/
+    list-style: none;
+    /*Para sumir a bolinha que aparece ao lado*/
+    margin-top: 30px;
+}
+
+.list-item {
+    background-color: #f2f3f3;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    /*Para colocar borda sombreada*/
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Ajustar itens na horizontal*/
+    padding: 0 15px;
+    /*Para não ficar colado na borda*/
+    border-radius: 5px;
+    /*Para arredondar a borda*/
+    margin-bottom: 20px;
+    /*Para não ficar um item grudado no outro*/
+    cursor: pointer;
+    /*Aparecer a mãozinha*/
+
+}
+
+img {
+    height: 25px;
+    /*Altura da imagem*/
+    opacity: 0;
+    /*Para sumir as imagens laterais de check lixo*/
+    transition: opacity 0.5s ease-in-out;
+    /*Transição da imagem*/
+}
+
+.list-item:hover img {
+    opacity: 1;
+    /*Aparecer a imagem, chekc e lixo, quando passar o mouse*/
+}
+
+.done {
+    background-color: #6f0eca;
+    text-decoration: line-through;
+    /*Colocar a linha na frase*/
+}
+
+.rodape {
+    padding: 20px;
+    color: #560c9b;
+    background-color: #dcbdfa;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: fixed;
+    /*Usando posição fixa na parte inferior*/
+    bottom: 0;
+    width: 100%;
+
+}
+
+.rodape-link {
+    color: #560c9b;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        /* Mudar a largura para 90% da largura da tela */
+        margin: 50px auto 0;
+        /* Centralizar o container */
+    }
+
+    .titulo {
+        font-size: 25px;
+        /* Reduzir o tamanho do título */
+    }
+
+    .input,
+    .botao {
+        width: 100%;
+        /* Expandir os inputs e botões para preencher a largura do container */
+    }
+}
