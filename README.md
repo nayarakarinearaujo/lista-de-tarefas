@@ -21,3 +21,6 @@ O projeto é responsivo, se adaptando a diferentes tamanhos de tela. Permite ao 
 <img alt="css3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </div><br/>
+
+<img alt="![QsvQJDWZrv]" src="https://github.com/nayarakarinearaujo/lista-de-tarefas/assets/149000384/667609f4-d6af-49be-94e1-cad60a7d422f"/>
+
